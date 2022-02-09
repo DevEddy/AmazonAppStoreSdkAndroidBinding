@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Amazon.AppStoreSdk.Binding</id>
+    <version>0.3.3</version>
+    <title>Binding for Amazon App Store SDK</title>
+    <authors>Eduard Schäfer</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/DevEddy/TaskerPluginBinding</projectUrl>
+    <description>This is a binding project for the Amazon App Store SDK</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Eduard Schäfer</copyright>
+    <tags>amazon app store sdk</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid">
+        <!--MonoAndroid dependencies go here-->
+      </group>
+    </dependencies>    
+  </metadata>
+</package>
