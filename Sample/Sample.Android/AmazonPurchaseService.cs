@@ -1,27 +1,23 @@
 ﻿using Android.Content;
-
-using System;
-
 using Com.Amazon.Device.Iap;
 using Com.Amazon.Device.Iap.Model;
-using Com.Amazon.Device.Drm;
-using Android.Runtime;
-using System.Threading.Tasks;
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Sample.Droid
 {
     public class AmazonPurchaseService
     {
         private readonly Context _context;
-        private readonly SmarthaAppPurchasingListener _smarthaAppPurchasingListener;
+        private readonly MyPurchasingListener _myPurchasingListener;
 
         public AmazonPurchaseService(Context context)
         {
             _context = context;
 
-            _smarthaAppPurchasingListener = new SmarthaAppPurchasingListener();
-            PurchasingService.RegisterListener(context, _smarthaAppPurchasingListener);
+            _myPurchasingListener = new MyPurchasingListener();
+            PurchasingService.RegisterListener(context, _myPurchasingListener);
         }
 
         public async Task<IList<Receipt>> GetPurchaseReceipts()
@@ -32,7 +28,7 @@ namespace Sample.Droid
 
             var requestId = PurchasingService.GetPurchaseUpdates(true);
 
-            _smarthaAppPurchasingListener.OnPurchaseUpdatesResponseAction = async (response) =>
+            _myPurchasingListener.OnPurchaseUpdatesResponseAction = async (response) =>
             {
                 try
                 {
@@ -62,20 +58,20 @@ namespace Sample.Droid
                 }
                 finally
                 {
-                    _smarthaAppPurchasingListener.OnPurchaseUpdatesResponseAction = null;
+                    _myPurchasingListener.OnPurchaseUpdatesResponseAction = null;
                 }
             };
             return await tcs.Task;
         }
     }
 
-    public class SmarthaAppPurchasingListener : Java.Lang.Object, IPurchasingListener
+    public class MyPurchasingListener : Java.Lang.Object, IPurchasingListener
     {
         public Action<PurchaseResponse> OnPurchaseResponseAction { get; set; }
         public Action<ProductDataResponse> OnProductDataResponseAction { get; set; }
         public Action<PurchaseUpdatesResponse> OnPurchaseUpdatesResponseAction { get; set; }
         public Action<UserDataResponse> OnUserDataResponseAction { get; set; }
-        public SmarthaAppPurchasingListener()
+        public MyPurchasingListener()
         {
 
         }

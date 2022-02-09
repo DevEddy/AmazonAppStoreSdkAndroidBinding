@@ -18,8 +18,6 @@ namespace Sample.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             var amazonPurchaseService = new AmazonPurchaseService(this);
-            
-            amazonPurchaseService.GetPurchaseReceipts();
 
             LoadApplication(new App());
         }

@@ -74,3 +74,16 @@ myPurchasingListener.OnPurchaseResponseAction = async (purchaseResponse) =>
 Microsoft Doc: https://docs.microsoft.com/de-de/xamarin/android/platform/binding-java-library/
 
 InputJar vs EmbeddedJar: https://stackoverflow.com/questions/59825410/xamarin-android-bindings
+
+# Testing
+Refer to the Amazon testing doc: https://developer.amazon.com/de/docs/in-app-purchasing/iap-app-tester-user-guide.html
+
+Connect to the testing device via adb and execute the commands as needed.
+```
+adb -s [ID_OF_DEVICE] tcpip 5555
+adb -s [ID_OF_DEVICE] connect 192.168.178.25:5555
+adb -s [ID_OF_DEVICE] shell 
+
+setprop debug.amazon.sandboxmode debug
+setprop debug.amazon.sandboxmode none
+```
