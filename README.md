@@ -12,7 +12,7 @@ using Com.Amazon.Device.Iap.Model;
 public class MyPurchasingListener : Java.Lang.Object, IPurchasingListener
 {
     public Action<PurchaseResponse> OnPurchaseResponseAction { get; set; }
-    public Action<Com.Amazon.Device.Iap.Model.ProductDataResponse> OnProductDataResponseAction { get; set; }
+    public Action<ProductDataResponse> OnProductDataResponseAction { get; set; }
     public Action<PurchaseUpdatesResponse> OnPurchaseUpdatesResponseAction { get; set; }
     public Action<UserDataResponse> OnUserDataResponseAction { get; set; }
     
