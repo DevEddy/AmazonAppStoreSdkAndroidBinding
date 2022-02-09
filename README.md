@@ -41,7 +41,6 @@ public class MyPurchasingListener : Java.Lang.Object, IPurchasingListener
     /// This is the callback for PurchasingService.GetPurchaseUpdates
     /// </summary>
     /// <param name="response"></param>
-    /// <exception cref="NotImplementedException"></exception>
     public void OnPurchaseUpdatesResponse(PurchaseUpdatesResponse response)
     {
         OnPurchaseUpdatesResponseAction?.Invoke(response);
