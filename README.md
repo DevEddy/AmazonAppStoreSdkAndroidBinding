@@ -1,6 +1,9 @@
 # Amazon App Store SDK - Android Binding
 This is a binding project for the Amazon App Store SDK. 
 
+# Nuget
+[![NuGet](https://img.shields.io/nuget/v/Eddys.Amazon.AppStoreSdk.Binding.svg?maxAge=259200)](https://www.nuget.org/packages/Eddys.Amazon.AppStoreSdk.Binding/)
+
 # Amazon Documentation 
 https://developer.amazon.com/de/docs/in-app-purchasing/integrate-appstore-sdk.html
 
