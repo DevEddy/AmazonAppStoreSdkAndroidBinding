@@ -51,7 +51,7 @@ public class MyPurchasingListener : Java.Lang.Object, IPurchasingListener
     /// <param name="response"></param>
     public void OnUserDataResponse(UserDataResponse response)
     {
-        OnUserDataResponseAction.Invoke(response);
+        OnUserDataResponseAction?.Invoke(response);
     }
 }
 
