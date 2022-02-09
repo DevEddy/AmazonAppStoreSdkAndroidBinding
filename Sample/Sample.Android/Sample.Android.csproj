@@ -58,6 +58,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Eddys.Amazon.AppStoreSdk.Binding">
+      <Version>3.0.2.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
@@ -92,10 +95,6 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AmazonAppStoreSdkAndroidBinding\AmazonAppStoreSdkAndroidBinding.csproj">
-      <Project>{22cbc32c-3f73-41d0-9885-89f72e7ce58c}</Project>
-      <Name>AmazonAppStoreSdkAndroidBinding</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sample\Sample.csproj">
       <Project>{7EA1AF9C-F617-4EBA-8CA2-46950C687B50}</Project>
       <Name>Sample</Name>

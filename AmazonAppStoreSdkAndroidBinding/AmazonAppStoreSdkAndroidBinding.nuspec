@@ -2,7 +2,7 @@
 <package >
     <metadata>
     <id>Eddys.Amazon.AppStoreSdk.Binding</id>
-        <version>3.0.2.2</version>
+        <version>3.0.2.3</version>
         <title>Binding for Amazon App Store SDK</title>
         <authors>Eduard Schäfer</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -21,5 +21,6 @@
     <files>
         <!-- android  -->
         <file src=".\bin\Release\*.*" target="lib\MonoAndroid10" />
+		<file src=".\bin\Release\Jars\*.*" target="lib\MonoAndroid10" />
     </files>
 </package>
