@@ -2,7 +2,7 @@
 <package >
     <metadata>
     <id>Eddys.Amazon.AppStoreSdk.Binding</id>
-        <version>3.0.2.1</version>
+        <version>3.0.2.2</version>
         <title>Binding for Amazon App Store SDK</title>
         <authors>Eduard Schäfer</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
