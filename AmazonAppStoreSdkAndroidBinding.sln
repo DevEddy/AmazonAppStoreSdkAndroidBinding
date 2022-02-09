@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonAppStoreSdkAndroidBinding", "AmazonAppStoreSdkAndroidBinding\AmazonAppStoreSdkAndroidBinding.csproj", "{22CBC32C-3F73-41D0-9885-89F72E7CE58C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Android", "Sample\Sample.Android\Sample.Android.csproj", "{70FC3317-4C89-43CC-A084-26EAF9B5ACAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample\Sample.csproj", "{5934CA6B-3BB5-4D35-8FDB-DE1808149092}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{22CBC32C-3F73-41D0-9885-89F72E7CE58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22CBC32C-3F73-41D0-9885-89F72E7CE58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22CBC32C-3F73-41D0-9885-89F72E7CE58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FC3317-4C89-43CC-A084-26EAF9B5ACAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FC3317-4C89-43CC-A084-26EAF9B5ACAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FC3317-4C89-43CC-A084-26EAF9B5ACAD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70FC3317-4C89-43CC-A084-26EAF9B5ACAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FC3317-4C89-43CC-A084-26EAF9B5ACAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FC3317-4C89-43CC-A084-26EAF9B5ACAD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5934CA6B-3BB5-4D35-8FDB-DE1808149092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5934CA6B-3BB5-4D35-8FDB-DE1808149092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5934CA6B-3BB5-4D35-8FDB-DE1808149092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5934CA6B-3BB5-4D35-8FDB-DE1808149092}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseReceiver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AmazonAppStoreSdkAndroidBinding.nuspec" />
@@ -56,7 +57,9 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <InputJar Include="Jars\amazon-appstore-sdk-3.0.2.jar" />
+    <EmbeddedJar Include="Jars\amazon-appstore-sdk-3.0.2.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedJar>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
