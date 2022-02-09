@@ -69,4 +69,5 @@ myPurchasingListener.OnPurchaseResponseAction = async (purchaseResponse) =>
 
 # Source for Binding a .JAR-File
 Microsoft Doc: https://docs.microsoft.com/de-de/xamarin/android/platform/binding-java-library/
+
 InputJar vs EmbeddedJar: https://stackoverflow.com/questions/59825410/xamarin-android-bindings
