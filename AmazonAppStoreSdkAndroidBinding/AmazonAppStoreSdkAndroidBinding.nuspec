@@ -2,14 +2,14 @@
 <package >
     <metadata>
     <id>Eddys.Amazon.AppStoreSdk.Binding</id>
-        <version>3.0.2.3</version>
+        <version>3.0.3.0</version>
         <title>Binding for Amazon App Store SDK</title>
         <authors>Eduard Schäfer</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <projectUrl>https://github.com/DevEddy/AmazonAppStoreSdkAndroidBinding</projectUrl>
         <license type="expression">MIT</license>
         <description>This is a binding project for the Amazon App Store SDK</description>
-        <releaseNotes>Initial release.</releaseNotes>
+        <releaseNotes>Support for Android 12+</releaseNotes>
         <copyright>Eduard Schäfer</copyright>
         <tags>amazon app store sdk</tags>  
         <dependencies>
